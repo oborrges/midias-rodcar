@@ -12,16 +12,17 @@
   justify-content: space-around;
   align-items: center;
 
-  background-color: #393A3C;
+  background-color: #000000;
   color: #FFFFFF;
 }
 
 h2 {
   font-family: 'Poppins';
   font-weight: 700;
-  font-size: 17.5635px;
+  font-size: 17px;
   line-height: 26px;
   padding-bottom: 12px;
+  text-align: center;
 }
 
 button {
@@ -43,30 +44,31 @@ button a {
 
 button:hover {
   background-color: #a5df54;
+  border: 2px solid #FFFFFF;
 }
 
-.midias {
+.container-midias-cartoes {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-.midias ul li {
+ ul li {
   list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.midias li a img {
-  width: 41px;
-  height: 41px;
+.midias ul li a img {
+  width: 50px;
 }
 
-.cartoes li img {
-  width: 59px;
-  
+.cartoes ul li img {
+  width: 70px;
 }
 
-li h2 {
+.cartoes h2 {
   text-align: center;
-  padding-bottom: 0;
+  padding: 12px;
 }
