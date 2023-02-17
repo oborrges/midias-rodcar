@@ -1,3 +1,20 @@
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20);
+    transform: translateY(-20);
+  }
+  
+  80% {
+    -webkit-transform: translateY(-10);
+    transform: translateY(-10);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -62,6 +79,10 @@ button:hover {
 
 .midias ul li a img {
   width: 50px;
+}
+
+.midias ul li a img:hover {
+  animation: bounce 1s;
 }
 
 .cartoes ul li img {
