@@ -1,18 +1,4 @@
 
-@keyframes move {
-  0%, 20%, 60%, 100% {
-    transform: translateY(0%);
-  }
-
-  40% {
-    transform: translateY(-20%);
-  }
-  
-  80% {
-    transform: translateY(-10%);
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -80,7 +66,7 @@ button:hover {
 }
 
 .midias ul li a img:hover {
-  animation: slide .5s linear infinite;
+  animation: slide 1s linear infinite;
 }
 
 .cartoes ul li img {
