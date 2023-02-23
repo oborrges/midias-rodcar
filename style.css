@@ -1,17 +1,15 @@
-@keyframes bounce {
+
+@keyframes move {
   0%, 20%, 60%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    transform: translateY(0%);
   }
 
   40% {
-    -webkit-transform: translateY(-20);
-    transform: translateY(-20);
+    transform: translateY(-20%);
   }
   
   80% {
-    -webkit-transform: translateY(-10);
-    transform: translateY(-10);
+    transform: translateY(-10%);
   }
 }
 
@@ -19,7 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} 
 
 .container {
   width: 100vw;
@@ -76,13 +74,13 @@ button:hover {
   align-items: center;
   gap: 12px;
 }
-
-.midias ul li a img {
+ .midias ul li a img {
   width: 50px;
+  animation: slide 1s;
 }
 
 .midias ul li a img:hover {
-  animation: bounce 1s;
+  animation: slide .5s linear infinite;
 }
 
 .cartoes ul li img {
@@ -92,4 +90,21 @@ button:hover {
 .cartoes h2 {
   text-align: center;
   padding: 12px;
+}
+
+@keyframes slide {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%);
+  }
+  
+  80% {
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%);
+  }
 }
