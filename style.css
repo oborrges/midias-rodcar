@@ -1,13 +1,40 @@
 
+
+@keyframes slide {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%);
+  }
+  
+  80% {
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 } 
 
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: red;
+}
+
 .container {
-  width: 100vw;
-  height: 270px;
+  width: 100%;
+  height: fit-content;
+  padding: 60px;
 
   display: flex;
   justify-content: space-around;
@@ -20,8 +47,8 @@
 h2 {
   font-family: 'Poppins';
   font-weight: 700;
-  font-size: 17px;
-  line-height: 26px;
+  font-size: 1.7rem;
+  line-height: 2.6rem;
   padding-bottom: 12px;
   text-align: center;
 }
@@ -37,8 +64,8 @@ button {
 button a {
   font-family: 'Poppins';
   font-weight: 700;
-  font-size: 17.5635px;
-  line-height: 26px;
+  font-size: 1.7rem;
+  line-height: 2.6rem;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -78,19 +105,16 @@ button:hover {
   padding: 12px;
 }
 
-@keyframes slide {
-  0%, 20%, 60%, 100% {
-    -webkit-transform: translateY(0%);
-    transform: translateY(0%);
-  }
+@media (max-width: 1150px) {
+  .container {
+    flex-direction: column;
+  }  
 
-  40% {
-    -webkit-transform: translateY(-20%);
-    transform: translateY(-20%);
+  .inscreva-se {
+    padding-bottom: 30px;
   }
-  
-  80% {
-    -webkit-transform: translateY(-10%);
-    transform: translateY(-10%);
-  }
+}
+
+@media (max-width: 550px) {
+
 }
