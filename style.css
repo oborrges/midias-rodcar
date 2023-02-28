@@ -27,12 +27,8 @@
   font-size: 62.5%;
 }
 
-body {
-  background: red;
-}
-
 .container {
-  width: 100%;
+  width: 100vw;
   height: fit-content;
   padding: 60px;
 
@@ -42,6 +38,8 @@ body {
 
   background-color: #000000;
   color: #FFFFFF;
+
+  gap: 20px;
 }
 
 h2 {
@@ -105,9 +103,10 @@ button:hover {
   padding: 12px;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1100px) {
   .container {
     flex-direction: column;
+    width: 100%;
   }  
 
   .inscreva-se {
@@ -115,6 +114,35 @@ button:hover {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }  
 
+  .inscreva-se {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 540px) {
+  .inscreva-se h2, button {
+    max-width: 310px;
+  }
+
+  .midias ul li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 290px;
+  }
+
+  .cartoes ul li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 290px;
+  }
 }
